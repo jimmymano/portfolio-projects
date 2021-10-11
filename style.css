@@ -1,0 +1,120 @@
+*{padding:0;margin:0;box-sizing:border-box;}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+html{
+  font-size:70%;
+}
+.gallery-wrapper{
+  height:100vh;
+  display:flex;
+}
+.gallery-item{
+  display:flex;
+  flex:1;
+  padding:2.5rem;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  overflow:hidden;
+  position:relative;
+  transition:flex 1.2s;
+  z-index:0;
+}
+.gallery-item::after{
+  content:'';
+  position:absolute;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,.6);
+  z-index:-1;
+  transition:background-color .5s;
+}  
+.gallery-item:hover{
+  flex:3;
+ 
+}
+.gallery-item:hover::after{
+    background-color:rgba(0,0,0,.2);
+}
+.item-1{
+  background-image: url(./thumbnails/1.jpg);
+}
+.item-2{
+  background-image: url(./thumbnails/2.jpg);
+}
+.item-3{
+  background-image: url(./thumbnails/3.jpg);
+}
+.item-4{
+  background-image: url(https://i.pravatar.cc/?img=48);
+}
+.item-5{
+  background-image: url(https://i.pravatar.cc/?img=31);
+}
+.description-wrapper{
+  text-transform:uppercase;
+  align-self:flex-end;
+  overflow:hidden;
+  display:flex;
+}
+.name{
+  font-size:5rem;
+  background-color:#fff;
+  padding:0 1rem;
+  transform:translateY(-100%);
+  text-decoration: none;
+}
+
+.name a{
+  font-size:5rem;
+  background-color:#fff;
+  padding:0 1rem;
+  transform:translateY(-100%);
+  text-decoration: none;
+  color:#000;
+}
+
+.position-title{
+  display:inline-block;
+  font-size:2rem;
+  background-color:#fff;
+  padding:1rem;
+  transform:translateY(100%);
+}
+.name,.position-title{
+  transition:transform .5s .5s;
+}
+.gallery-item:hover .name,
+.gallery-item:hover .position-title{
+  transform:translateY(0);
+}
+@media(max-width:1100px){
+  .name{
+    font-size:4.5rem;
+  }
+  .position-title{
+    font-size:1.8rem;
+  }
+}
+@media(max-width:770px){
+  .gallery-wrapper{
+    flex-direction:column;
+  }
+  .gallery-item:hover{
+    flex:100%;
+  }
+    .name{
+    font-size:2.5rem;
+  }
+  .position-title{
+    font-size:1.25rem;
+  }
+}
