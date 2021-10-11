@@ -63,7 +63,7 @@ html{
   text-transform:uppercase;
   align-self:flex-end;
   overflow:hidden;
-  display:flex;
+  /* display:flex; */
 }
 .name{
   font-size:5rem;
