@@ -1,6 +1,9 @@
 *{padding:0;margin:0;box-sizing:border-box;}
 body{
   font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+
 }
 html{
   font-size:70%;
