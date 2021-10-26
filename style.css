@@ -3,11 +3,14 @@ body{
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   letter-spacing: .25rem;
-
 }
 html{
   font-size:70%;
 }
+/* #bg-img{
+  height:auto;
+  max-width:100%;
+} */
 .gallery-wrapper{
   height:100vh;
   display:flex;
