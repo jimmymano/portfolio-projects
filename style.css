@@ -5,7 +5,7 @@ body{
   letter-spacing: .25rem;
 }
 html{
-  font-size:70%;
+  font-size:100%;
 }
 /* #bg-img{
   height:auto;
@@ -69,6 +69,7 @@ html{
   text-transform:uppercase;
   align-self:flex-end;
   overflow:hidden;
+
   /* display:flex; */
 }
 .name{
@@ -124,4 +125,24 @@ html{
   .position-title{
     font-size:1.25rem;
   }
+}
+#header{
+  font-size: 4rem;
+}
+.about-left{  
+  background-color:#fff;
+  padding:0 1rem;}
+
+.about-desc{  font-size:1rem; background-color:#fff;
+  padding:0 2rem;
+font-weight: 400;}
+.img-container{
+  display:flex; 
+  justify-content: center;
+  align-items: center;
+}
+.about-right{
+  display:flex;
+  justify-content: center;
+  align-items: center
 }
