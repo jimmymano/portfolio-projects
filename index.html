@@ -42,9 +42,22 @@
         <!-- Nav Right Side -->
         <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
 
+                              <!-- Home Link -->
+                              <li class="flex items-center">
+                                
+                                <a class="lg:text-gray-300 lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                                  href="#home"
+                                 >
+                                 
+                                  <span class=" inline-block ml-2">Home </span>
+                                  <span class="md:hidden inline-block ml-2">Home</span>
+                                </a>
+                              </li>
+          
+
                     <!-- About Me Link -->
                     <li class="flex items-center">
-                      <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                      <a class="lg:text-gray-300 lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                         href="#about-me">
                        
                         <span class=" inline-block ml-2">About </span>
@@ -54,7 +67,7 @@
 
           <!-- Project Link -->
           <li class="flex items-center">
-            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+            <a class="lg:text-gray-300 lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
               href="#project-section">
              
               <span class="inline-block ml-2">Projects</span>
@@ -63,16 +76,19 @@
           </li>
           <!-- Social Media Button -->
           <li class="flex items-center">
-            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+            <a class="lg:text-gray-300 lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
               href="https://www.linkedin.com/in/jimmy-mano-5a9894110/">
               <!-- Icon -->
-              <i class="lg:text-gray-300 text-gray-500 fab fa-linkedin text-lg leading-lg "></i>
+              <span class="inline-block ml-2">Contact </span>
+              
               <span class="lg:hidden inline-block ml-2">Linkedin</span>
+              <i class="lg:text-gray-300 text-gray-500 fab fa-linkedin text-lg leading-lg "></i>
+              
             </a>
           </li>
           <!-- Social Media Button -->
           <li class="flex items-center">
-            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+            <a class="lg:text-gray-300 lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
               href="http://github.com/jimmymano">
               <!-- Icon -->
               <i class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "></i>
@@ -88,10 +104,10 @@
       <!-- Splash Page -->
 <main>
   <section id="home">
-  <div class="relative pt-16 pb-32 flex content-center items-center justify-center md:h-48 md:w-48" style="min-height: 100vh;">
+  <div class="relative pt-16 pb-32 flex content-center items-center justify-center lg:h-48 lg:w-48" style="min-height: 100vh;">
     <!-- Background Image -->
     <div id="bg-img"
-      class="absolute top-0 w-full h-full  bg-cover "
+      class="absolute top-0 w-full h-full  lg:bg-cover  "
       style="background: url(./images/Pierce-Ca\ \(2\).jpg)" data-aos="fade" data-aos-delay="5000" >
       <!-- Overlay -->
       <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
@@ -266,10 +282,11 @@
     document.getElementById(collapseID).classList.toggle("block");
   }
 </script>
-<!-- Scroll Down Button -->
+<!-- Scroll Functions -->
 <script>
   const scrollDown = document.getElementById("btn1");
   const projectScroll = document.getElementById("projectsbtn");
+  const scrollHome = document.getElementById("home");
 
   projectScroll.addEventListener('click', function (){
     window.scrollTo({
