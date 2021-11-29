@@ -171,9 +171,10 @@ margin-top: 8rem;
 transition: 1s;
 padding:none;
 border:none;
+animation:bounce 3s infinite;
 }
 #btn1:hover{
-  animation:all 1s infinite;
+  
   transform:scale(1.2);
 }
 #projectsbtn{
