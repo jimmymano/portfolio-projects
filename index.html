@@ -31,7 +31,7 @@
           <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
               <a class="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="https://github.com/jimmymano">
                 <!-- Nav Title -->
-                Jimmy Mano
+                <!-- Jimmy Mano -->
               </a>
               <!-- Hamburger Menu (Mobile) -->
               <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
@@ -74,6 +74,17 @@
               <span class="md:hidden inline-block ml-2">Projects</span>
             </a>
           </li>
+
+           <!-- Blog Link -->
+           <li class="flex items-center">
+            <a class="lg:text-gray-300 lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="jimmymano.com/codeblog">
+             
+              <span class="inline-block ml-2">Blog</span>
+              <span class="md:hidden inline-block ml-2">Blog</span>
+            </a>
+          </li>         
+
           <!-- Social Media Button -->
           <li class="flex items-center">
             <a class="lg:text-gray-300 lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
@@ -177,7 +188,7 @@
   <section id="about-me">
 
 
-    <div class="about-container flex">
+    <div class="about-container flex" style="height: 100vh;">
     <div class="about-left flex items-center  " style="min-height: 100vh; width:50%; margin-left: 30px; flex-direction: column;justify-content: center; ">
       <h1 id="header" data-aos="fade-up" data-aos-delay="8000" data-aos-duration="4000">About Me</h1>
       <p class="about-desc" style="margin-top: 30px;" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="8000" >
@@ -186,16 +197,18 @@
       <div class="skills">
       <h2 class="skills" style="margin-top: 30px;" data-aos="fade-up" data-aos-delay="1600" data-aos-duration="7000">Technologies</h2>
       <div class="skillcontainer flex" data-aos="fade-up" data-aos-delay="1800" data-aos-duration="6000">
-      <img src="./images/icons8-react-512.png" alt="react">
-      <img src="./images/icons8-javascript-500.png" alt="javascript">
-      <img src="./images/icons8-css3-500.png" alt="css">
-      <img src="./images/icons8-html-5-500.png" alt="html">
-      <img src="./images/icons8-nodejs-256.png" alt="node">
-      <img src="./images/icons8-postgresql-500.png" alt="postgresql">
-      <img src="./images/icons8-git-500.png" alt="git">
-      <img src="./images/icons8-github-480.png" alt="github">
+      <img src="./images/icons8-react-512.png" alt="react" title="React">
+      <img src="./images/icons8-javascript-500.png" alt="javascript" title="Javascript">
+      <img src="./images/icons8-css3-500.png" alt="css" title="CSS 3">
+      <img src="./images/icons8-html-5-500.png" alt="html" title="HTML 5">
+      <img src="./images/icons8-nodejs-256.png" alt="node" title="Node JS">
+      <img src="./images/icons8-postgresql-500.png" alt="postgresql" title="PostgresQL">
+      <img src="./images/icons8-git-500.png" alt="git" title="Git">
+      <img src="./images/icons8-github-480.png" alt="github" title="Github">
       </div>
       <button id="projectsbtn"  style="margin-top: 30px;" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="8000"><p>Projects</p></button>
+      <!-- <button id="homebtn"  style="margin-top: 30px;" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="8000"><p>Home</p></button> -->
+
       
       </div>
 
@@ -286,7 +299,7 @@
 <script>
   const scrollDown = document.getElementById("btn1");
   const projectScroll = document.getElementById("projectsbtn");
-  const scrollHome = document.getElementById("home");
+  const scrollHome = document.getElementById("homebtn");
 
   projectScroll.addEventListener('click', function (){
     window.scrollTo({
@@ -310,6 +323,14 @@
       behavior:"smooth"
     })
   })
+
+  scrollHome.addEventListener('click', function (){
+    window.scrollTo({
+      top:0,
+      left:0,
+      behavior:"smooth"
+    })
+  }) 
 
 </script>
 </body>
