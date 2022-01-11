@@ -22,29 +22,29 @@
       <!-- Tailwind Library -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
 </head>
-<body>
+<body class="p-0 m-0 box-content overflow-x-hidden">
 <!--  -->
-
+<!--     <div 
+      class=" bg-gray-500 md:absolute md:w-full md:h-full md:bg-cover md:top-0 md:min-h-full"
+      style="background: url(./images/Pierce-Ca\ \(2\).jpg)" blackOverlay
+      >   -->
 <!-- Hero Page -->
       <!-- Splash Page -->
 <main>
-  <section id="home flex justify-center h-screen w-screen" >
-  <div class="relative  flex  items-center justify-center px-12 md:pt-16 md:pb-32 h-auto w-full " >
+  <section id="home" class="flex justify-center  md:h-screen  " >
+  <div class="relative    items-center justify-center md:pt-16 md:pb-32 md:h-full md:w-full " >
     <!-- Initial Background Image  -->
-    <div 
-      class=" bg-gray-500 md:absolute md:w-full md:h-full md:bg-cover md:top-0 md:min-h-full"
-      style="background: url(./images/Pierce-Ca\ \(2\).jpg)" 
-      >  
+<video src="./video/p5.mp4" muted loop autoplay class="md:absolute md:top-0 md:left-0 md:object-cover md:fixed md:h-full md:w-full hidden md:block"></video> 
 
  
 
-      <!-- Overlay -->
-      <span id="blackOverlay" class="md:w-full md:h-full md:absolute md:opacity-75 md:bg-black"></span>
+      <!-- Overlay  <span  class="md:w-full md:h-full md:absolute md:opacity-75 md:bg-black"></span> -->
+      
     </div>
     <!-- Text Over Main Background -->
-    <div class="container relative mx-auto ">
-      <div class="items-center flex flex-row md:flex md:flex-wrap ">
-        <div class="w-full lg:w-6/12 px-4 ml-auto  text-center py-12 ">
+    <div class="container absolute z-2 flex justify-center content-center md:h-full">
+      <div class="items-center flex flex-row md:flex md:flex-wrap justify-center">
+        <div class="w-full lg:w-6/12   text-center py-12 ">
           <div class=" ">
             <h1 class=" pt-16 text-5xl animate-pulse md:animate-none bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-indigo-300 md:text-white font-extrabold md:font-bold md:text-5xl md:pb-12 "  
             data-aos="fade-up" data-aos-delay="3200">
@@ -78,15 +78,16 @@
               <div class="flex justify-center items-center md:mt-8 md:pb-6 ">
               <span>
               <button class="mt-4 hidden md:block text-sm md:text-lg md:text-gray-300 btn uppercase m-6 border-2  p-4 md:font-semibold hover:scale-x-125 transition-all duration-300 " 
-              data-aos="fade-right" data-aos-delay="800" id="btn1" data-aos-duration="2000" >
-               <p> About  </p>
+              data-aos="fade-up" data-aos-delay="800" id="btn1" data-aos-duration="2000" >
+               <p class="inline-block"> About  </p>
+               <i class="lg:text-gray-300 text-gray-500 fas fa-meh text-lg leading-lg ml-2 "></i> 
             </button>
               </span>
 
                 <!-- Projects Scroll -->
               <span>
                 <button class="mt-4 text-sm md:text-lg md:text-gray-300 btn uppercase m-6 font-bold md:font-normal md:font-semibold md:border-2  md:border-white p-2 md:p-4" 
-                data-aos="fade-left" data-aos-delay="800" id="projectsbtn" data-aos-duration="2000" >
+                data-aos="fade-up" data-aos-delay="1000" id="projectsbtn" data-aos-duration="2000" >
                  <p class="inline-block"> Projects  </p>
                  <i class="lg:text-gray-300 text-gray-500 fas fa-briefcase text-lg leading-lg ml-2 "></i> 
               </button>
@@ -95,7 +96,7 @@
                 <!-- Blog -->
                 <span>
                   <button class="mt-4 text-sm md:text-lg md:text-gray-300 btn uppercase m-6 font-bold md:font-normal md:font-semibold md:border-2  md:border-white p-2 md:p-4" 
-                  data-aos="fade-left" data-aos-delay="1200" id="projectsbtn" data-aos-duration="2000" >
+                  data-aos="fade-up" data-aos-delay="1200" id="projectsbtn" data-aos-duration="2000" >
                    
                    <a class="mt-4 text-lg md:text-lg md:text-gray-300 btn uppercase  font-bold md:font-normal md:font-semibold"
                    href="https://codeblog.jimmymano.com">
@@ -109,22 +110,25 @@
                 </button>
                   </span>  
 
-                <!-- Linkedin -->
+
+                <!--LinkedIn -->
                 <span>
-                  <button class="mt-4 text-lg md:text-lg md:text-gray-300 btn uppercase m-6 font-bold md:font-normal md:font-semibold md:border-2  md:border-white p-2 md:p-4" 
-                  data-aos="fade-left" data-aos-delay="1600" id="projectsbtn" data-aos-duration="2000" >
+                  <button class="mt-4 text-sm md:text-lg md:text-gray-300 btn uppercase m-6 font-bold md:font-normal md:font-semibold md:border-2  md:border-white p-2 md:p-4" 
+                  data-aos="fade-up" data-aos-delay="1200" id="projectsbtn" data-aos-duration="2000" >
                    
                    <a class="mt-4 text-lg md:text-lg md:text-gray-300 btn uppercase  font-bold md:font-normal md:font-semibold"
                    href="https://www.linkedin.com/in/jimmy-mano-5a9894110/">
                   
                    <!-- Icon -->
                     <span class=" inline-block text-sm ">Linkedin</span> 
-                    <i class="lg:text-gray-300 text-gray-500 fab fa-linkedin text-lg leading-lg "></i> 
+                    <i class="lg:text-gray-300 text-gray-500 fab fa-linkedin text-lg leading-lg ml-2 "></i> 
                    
                   </a>
 
                 </button>
-                  </span>
+                  </span>                    
+
+    
 
                 </nav>
               </div>
@@ -146,42 +150,43 @@
 <!-- End of Splash Page -->
 
   <!-- About Me Section -->
-  <section id="about-me" class="">
+  <section id="about-me" class="w-screen">
 
 
     <!-- About Me Container -->
-    <div class="about-container md:mt-6  md:flex items-center justify-center  pb-16 lg:h-full lg:w-full xl: 2xl:" >
+    <div class="about-container mt-64 md:mt-6  md:flex items-center justify-center  pb-16 lg:h-full lg:w-full xl: 2xl:" >
         <!-- About Left Container -->
           <div class="about-left flex  items-center justify-center md:w-1/2 flex-col md:mt-6  " >
             
             <div class="flex flex-col items-center justify-center  ">
-              <h1 id="header" data-aos="fade-up" data-aos-delay="8000" data-aos-duration="4000" class="text-xs font-bold md:text-lg lg:text-xl xl:text-2xl ">About Me</h1>
-              <p class="about-desc text-xs  md:text-sm lg:text-lg xl:text-xl ml-4 mt-6 px-6 pb-6 md:pb-6 leading-8"  data-aos="fade-up" data-aos-delay="1000" data-aos-duration="8000" >
+              <h1 id="header" data-aos="fade-up" data-aos-delay="8000" data-aos-duration="4000" class="text-xs font-black md:text-lg lg:text-xl xl:text-2xl ">About Me</h1>
+              <p class="about-desc text-xs  md:text-sm lg:text-lg xl:text-xl ml-4 mt-6  pb-6 md:pb-6 leading-8"  data-aos="fade-up" data-aos-delay="1000" data-aos-duration="8000" >
               Passionate self-learning programmer looking to expand my skills through professional work experience. I am interested in all opportunities regarding freelance,     apprenticeships, internships, full-time, and part-time.
               </p>
             </div>
 
+            <!-- Technologies Container -->
             <div class="skills flex flex-col items-center justify-center  md:mt-6 ">
               <h2 class="skills font-bold text-xs md:text-lg"  data-aos="fade-up" data-aos-delay="1600" data-aos-duration="7000">Technologies</h2>
                    <div class="flex justify-center md:grid md:grid-cols-3 md:gap-8 lg:gap-12 xl:gap-16 2xl:gap-32 md:my-4 md:my-6 md:p-6 lg:p-12 xl:pb-16 2xl:pb-32" data-aos="fade-up" data-aos-delay="1800" data-aos-duration="6000">
-
+                    
+                    <div class="inline sm:h-10 "><img src="./images/icons8-javascript-500.png"></div>
+                    <div class="inline sm:h-10 "><img src="./images/icons8-react-512.png"></div>
                     <div class="inline sm:h-10 "><img src="./images/icons8-css3-500.png"></div>
-                    <div class="inline sm:h-10 "><img src="./images/icons8-figma-500.png"></div>
+                    <div class="inline sm:h-10 "><img src="./images/icons8-nodejs-256.png"></div>
+                    <div class="inline sm:h-10 "><img src="./images/Tailwind-1324888767228371881.png"></div>
                     <div class="inline sm:h-10 "><img src="./images/icons8-git-500.png"></div>
                     <div class="inline sm:h-10 "><img src="./images/icons8-github-480.png"></div>
-                    <div class="inline sm:h-10 "><img src="./images/icons8-html-5-500.png"></div>
-                    <div class="inline sm:h-10 "><img src="./images/icons8-javascript-500.png"></div>
-                    <div class="inline sm:h-10 "><img src="./images/icons8-nodejs-256.png"></div>
+                    <div class="inline sm:h-10 "><img src="./images/icons8-html-5-500.png"></div>                   
                     <div class="inline sm:h-10 "><img src="./images/icons8-postgresql-500.png"></div>
-                    <div class="inline sm:h-10 "><img src="./images/icons8-react-512.png"></div>
-
+                    
                   </div>
 
             </div>
 
           </div>
         <!-- About Right Container -->
-        <div class="about-right flex justify-center items-center md:w-full md:h-full" >
+        <div class="about-right flex justify-center items-center md:w-full md:h-full " >
                 <div class="img-container  p-10">   <img src="./images/95047694_2937015166379612_556611140038164480_n (2).png" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="8000" style="border-radius: 30px;">
                 </div>
    
@@ -189,7 +194,7 @@
   </div>
 
   </section>
-
+  
 
   <!-- Projects Section -->
 
