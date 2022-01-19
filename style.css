@@ -1,4 +1,4 @@
-/* *{ outline: 1px red solid ;}  */
+
 
 body{
   margin:0;
@@ -9,14 +9,7 @@ body{
 html{
   font-size:100%;
 }
-/* #bg-img{
-  height:auto;
-  max-width:100%;
-} */
-.gallery-wrapper{
-  height:100vh;
-  display:flex;
-}
+
 .gallery-item{
   display:flex;
   flex:1;
@@ -72,7 +65,7 @@ html{
   align-self:flex-end;
   overflow:hidden;
 
-  /* display:flex; */
+ 
 }
 .name{
   font-size:4rem;
